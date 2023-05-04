@@ -1,0 +1,32 @@
+=head1 NAME
+
+HelloWorld - print a friendly greeting
+
+=head1 SYNOPSIS
+
+  use HelloWorld;
+  HelloWorld->greet;
+
+=head1 DESCRIPTION
+
+This module prints a friendly greeting.
+
+=head1 FUNCTIONS
+
+=over 4
+
+=item greet
+
+Print a friendly greeting.
+
+=back
+
+=cut
+
+package HelloWorld;
+
+sub greet {
+    print "Hello, POD!\n";
+}
+
+1;
