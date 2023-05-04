@@ -1,0 +1,43 @@
+// Declaración de variables
+@primary-color: #007bff;
+@secondary-color: #6c757d;
+@font-size: 16px;
+
+// Mixin para establecer el tamaño de fuente
+.font-size(@size) {
+  font-size: @size;
+}
+
+// Mixin para hacer que el texto sea centrado verticalmente y horizontalmente
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Definición de estilos para el encabezado
+header {
+  background-color: @primary-color;
+  color: #fff;
+  padding: 10px;
+  .font-size(24px);
+}
+
+// Definición de estilos para el botón
+.button {
+  background-color: @secondary-color;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  .font-size(16px);
+  &:hover {
+    background-color: darken(@secondary-color, 10%);
+  }
+}
+
+// Estilos para el cuerpo de la página
+body {
+  .centered-text;
+  .font-size(@font-size);
+}
