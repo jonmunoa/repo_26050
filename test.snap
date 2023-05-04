@@ -1,0 +1,14 @@
+name: my-app
+version: '1.0'
+summary: Una breve descripción de mi aplicación.
+description: |
+  Una descripción más larga de mi aplicación.
+  Puede incluir varias líneas de texto.
+
+grade: stable
+confinement: strict
+
+apps:
+  my-app:
+    command: my-app
+    plugs: [network, home]
